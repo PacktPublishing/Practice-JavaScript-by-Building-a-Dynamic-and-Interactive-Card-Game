@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css"> </head>
+
+<body>
+    <div >Streak: <div class="score">0</div></div>
+    <div class="message">Click to Start</div>
+    <div class="gameplay"></div>
+    <button type="button" >Start</button>
+    <button type="button"class="hideButton">Higher</button>
+    <button type="button"class="hideButton">Lower</button>
+    <script>
+    const message = document.querySelector(".message");
+    const score = document.querySelector(".score");
+    const button = document.querySelectorAll("button");
+    const gameplay = document.querySelector(".gameplay");
+    
+    let curCardValue = 0;
+    let scoreValue = 0;
+    let deck = [];
+    const ranks = [2,3,4,5,6,7,8,9,10,"J","Q","K","A"];
+    const suits = ["hearts","diams","clubs","spades"];
+    
+    for(let i = 0;i<button.length;i++){
+        button[i].addEventListener("click",playGame);
+    }
+    
+    function playGame(){
+        console.log("clicked");
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+
+</html>
